@@ -10,7 +10,7 @@ public class Main {
         while(start){
             System.out.println("Please y to continue");
             String starting = inputScanner.nextLine();
-            start = ((starting.equals("Y"))||(starting.equals("y")))?false:true;
+            start = (!(starting.equals("Y"))&&!(starting.equals("y")));
         }
 
         //Card1 input both amount spent and limit
